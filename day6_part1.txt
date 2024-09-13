@@ -1,0 +1,12 @@
+-This is the description for the solution of day6_part1 of the advent calendar set
+
+1) In this problem we are asked to find the amount of times that we can break the record
+2) I decided to make 2 arrays, one for the time and one for the distance that my boat has to reach
+3)I loop through the number of races
+4) for each race, I have to do the required calculations 
+5) numberOfWins, determines the number of times my boat can beat the record
+6) for the calculation, each time we loop through the race time, we increase the holding time and decrease the remaining time 
+7) for instance 40*0, 39*1, 38*2 ....
+8) is my travel destination is greater than the record, I count it a win 
+9) since we are asked to return the multiplication of all the number of times we could beat the race, I multiply them by the sum
+10) sum is my answer;

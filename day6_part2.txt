@@ -1,0 +1,11 @@
+-This is the description for the solution of day6_part2 of the advent calendar set
+
+1) this problem is a variation of our previous problem which requires us to work with bigger integer numbers
+2) this time, we dont have more than one race.
+3) However, in order for our numbers not to overflow, we need to use long long data type to store our integer
+4) when we loop through the time itself, we will keep the speed as the amount of time we hold the button.
+5) for the calculation, each time we loop through the race time, we increase the holding time and decrease the remaining time 
+6) as muy character, puts his hand on the bottom, the remaining race time, decreases, which is shown on the variable remaining.
+7) finally, my distance traveled is the multiplication of speed*remaining;
+8) If it is greater than the record, I add one to the winingNumb
+

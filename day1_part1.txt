@@ -1,0 +1,16 @@
+-This is the description for the solution of day1_part1 of the advent calendar set
+
+by creating a header file and putting the puzzle inputs in an array, we can access each row of data and follow that with 
+a set of computations that will be covered in this document
+
+1) first a variable with the name of total will be assigned the value of 00
+2) we will loop through each element and try to find the digits on each string, this will be done using getEachLineValue function
+3)the firstNumb and lastNumb are initializing a null character. We will use the first to assign the first accord digit number and the last will be the last digit in the string
+4) the *p is pointing to the line that we are looping through (current line) and at the time it is initialized, its value is the [0] character in the string, however, by applying p++, it will move toward the end of the string
+5) we check if the current character is a digit or not
+6) if it is a digit, we will assign it to the firstNumb and lastN 
+7) the last numb also will be assigned the same value, this is because of a case that we only have one digit in the entire string
+8)however, if a digit is found, we will update the lastNumb
+9)then by (firstNumb - '0') * 10 + (lastNumb - '0'), we will turn a char into integer
+10) the value should be added to the total which we assigned 0 in the begining, this value will be updated as we loop through each string
+11) finally, we will return the total value which is the sum of all the numbers in our input
